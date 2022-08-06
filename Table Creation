@@ -1,0 +1,31 @@
+CREATE TABLE Olahraga 
+(
+ID_Sport NVARCHAR(20) NOT NULL, 
+Tanggal DATE(20) NOT NULL, 
+Cabang_Olahraga NVARCHAR(20) NOT NULL, 
+ID_Atlet NVARCHAR(20) NOT NULL,
+);
+
+INSERT INTO Olahraga 
+(ID_Sport, Tanggal, Cabang_Olahraga, ID_Atlet) 
+VALUES
+(‘S001’,’2021-07-21’,’Diving’,’A001’),
+(‘S002’,’2021-07-30’,’Volleyball’,’A002’),
+(‘S003’,’2021-08-02’,’Badminton’,’A003’),
+(‘S004’,’2021-08-03’,’Archery’,’A004’),
+(‘S005’,’2021-08-06’,’Badminton’,’A003’);
+
+CREATE TABLE Atlet
+(
+ID_Atlet NVARCHAR(20) NOT NULL,
+Nama_Atlet NVARCHAR(20) NOT NULL,
+Kewarganegaraan NVARCHAR(20) NOT NULL
+);
+
+INSERT INTO Atlet 
+(ID_Atlet, Nama_Atlet, Kewarganegaraan)
+VALUES 
+(‘A001’,’Finke Robert’,’Inggris’),
+(‘A002’,’Ran Takahashi’,’Jepang’),
+(‘A003’,’Anthony Ginting’,’Indonesia’),
+(‘A004’,’An San’,’Korea’);
